@@ -19,16 +19,15 @@ Exercise:
 
 */
 
-interface Entity {
+
+interface User {
+    name: string;
     id: string;
 }
 
-interface User extends Entity {
-    name: string;
-}
-
-interface Product extends Entity {
+interface Product  {
     description: string;
+    id: string;
 }
 
 const mockUsers: User[] = [
